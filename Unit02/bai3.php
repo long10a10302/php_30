@@ -2,16 +2,19 @@
 <?php
 function isPrimeNumber($n)
 {
-    if ($n < 2) {
-        return false;
-    }
-    $sprtRoot = sqrt($n);
-    for ($i = 2; $i <= $sprtRoot ; $i++) {
-        if ($n % $i == 0) {
-            return false;
-        }
-    }
-    return true;
+   if($n > 0){
+       $dem = 0;
+       for ($i = 1; $i <= $n; $i++){
+           if ($n % i == 0){
+               $dem++;
+           }
+       }
+       if ($dem = 2){
+           return true;
+       }else{
+           return false;
+       }
+   }
 }
 
 echo ("Các số nguyên tố nhỏ hơn 100 là: <br>");
