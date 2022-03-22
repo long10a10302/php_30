@@ -7,9 +7,9 @@ function checkPalindrome($string)
     echo "Input: " . $string . "<br>";
     // Sử dụng hàm đảo ngược chuỗi strrev() hoặc explod chuỗi rồi áp dụng bào 4.2 đảo ngược mảng
     if ($string == strrev($string)) {
-        echo $string . " là chuỗi palindrome.";
+       return $string . " là chuỗi palindrome.";
     } else {
-        echo $string . " không là chuỗi palindrome.";
+        return $string . " không là chuỗi palindrome.";
     }
 }
 ?>

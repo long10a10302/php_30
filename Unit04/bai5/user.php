@@ -1,7 +1,7 @@
 <?php
     include "header.php";
     include "sidebar.php";
-    echo "main";
+    echo "User";
     include "footer.php";
     include "user.php";
 ?>
