@@ -3,5 +3,5 @@
     include "sidebar.php";
     echo "main";
     include "footer.php";
-    include "user.php";
+  
 ?>
